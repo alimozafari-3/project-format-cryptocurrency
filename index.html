@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <section class="app">
+      <header>
+        <nav class="header">
+          <img src="images/logo-black.png" alt="" class="header-logo" />
+          <button class="header-menu-burger" onclick="showMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="header-menu" id="menu">
+            <li class="header-menu-item">
+              <a href="#" class="header-menu-item-link">NEWS</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#" class="header-menu-item-link">GUIDES & ANALYTICS</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#" class="header-menu-item-link">EVENTS</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#" class="header-menu-item-link">EXPLAINED</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#" class="header-menu-item-link">ICON CLAENDER</a>
+            </li>
+          </ul>
+          <section class="clear-fix"></section>
+        </nav>
+      </header>
+    </section>
+
+    <script>
+      function showMenu() {
+        var menu = document.getElementById("menu");
+        if (menu.className === "header-menu") {
+          menu.className += " show";
+        } else {
+          menu.className = "header-menu";
+        }
+      }
+    </script>
+  </body>
+</html>
